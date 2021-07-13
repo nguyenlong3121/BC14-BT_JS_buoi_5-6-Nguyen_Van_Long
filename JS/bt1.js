@@ -60,17 +60,31 @@ let bt3 = document.getElementById("bt3").addEventListener("click", function(){
 let bt4 = document.getElementById("bt4").addEventListener("click", function(){
     let divResult4 = document.getElementById("result4");
     let divContent = document.getElementById("content");
-    divContent.classList.remove("d-none")
-    
-    let oddEven = document.getElementsByClassName("odd-even");
-    console.log(oddEven);
-    for(let m=0; m<10; m++){
-        if (m%2 == 0){
-            oddEven[m].classList.add("even");
-            console.log(m);
-        }else{
-            oddEven[m].classList.add("odd");
-            console.log(m);
+    for (let m=1; m<=10; m++){
+    let oddEven= document.createElement("div");
+       
+        if (m%2==0){
+            oddEven.style.background= "red"
+            oddEven.innerHTML= `div chẵn số ${m}`
+            divContent.appendChild(oddEven);
+        }else {
+            oddEven.style.background= "blue"
+            oddEven.innerHTML= `div lẽ số ${m}`
+            divContent.appendChild(oddEven);
         }
     }
+    
+    // divContent.classList.remove("d-none")
+    
+    // let oddEven = document.getElementsByClassName("odd-even");
+    // console.log(oddEven);
+    // for(let m=0; m<10; m++){
+    //     if (m%2 == 0){
+    //         oddEven[m].classList.add("even");
+    //         console.log(m);
+    //     }else{
+    //         oddEven[m].classList.add("odd");
+    //         console.log(m);
+    //     }
+    // }
 })
