@@ -1,0 +1,15 @@
+#result4{
+    width: 100%;
+    height: auto;
+    background-color: rgb(51,57,63);
+    padding: 12px;
+}
+.odd{
+    background-color: red;
+    padding: 10px;
+}
+.even{
+    background-color: blue;
+    padding: 10px;
+
+}
